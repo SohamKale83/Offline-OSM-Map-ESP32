@@ -1,0 +1,15 @@
+# Arduino build files
+build/
+*.o
+*.elf
+*.hex
+*.bin
+
+# Temporary files
+*.tmp
+.DS_Store
+Thumbs.db
+
+# Secrets
+secrets.h
+credentials.h
