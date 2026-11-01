@@ -37,8 +37,8 @@ The project uses map data from **OpenStreetMap (OSM)**, processed using QGIS and
 
 | Zoom level 10 | Zoom level 11 |
 |:---: | :---: |
-| ![10](docs/images/zoom_10.jpg) | ![11](docs/images/zoom_11.jgp) |
-| ![12](docs/images/zoom_12.jpg) | ![13](docs/images/zoom_13.jgp) |
+| ![10](docs/images/zoom_10.jpg) | ![11](docs/images/zoom_11.jpg) |
+| ![12](docs/images/zoom_12.jpg) | ![13](docs/images/zoom_13.jpg) |
 | ![14](docs/images/zoom_14.jpg) | ![15](docs/images/zoom_15.jpg) |
 
 ---
