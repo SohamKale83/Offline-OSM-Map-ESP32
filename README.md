@@ -4,6 +4,8 @@ An embedded mapping project that displays an **offline map of Nagpur, Maharashtr
 
 The project uses map data from **OpenStreetMap (OSM)**, processed using QGIS and exported as image tiles for offline use.
 
+---
+
 ## ✨ Features
 
 - 🗺️ Offline map viewing of Nagpur.
@@ -13,35 +15,33 @@ The project uses map data from **OpenStreetMap (OSM)**, processed using QGIS and
 - 🖥️ Compact display using a 2.4-inch ST7789 TFT.
 - 🔌 Built using an ESP32 development board.
 
+---
+
 ## 🧰 Hardware Requirements
 
-| Component | Description |
-|---|---|
-| ESP32 DevKit V1 | Main microcontroller |
-| 2.4-inch ST7789 TFT | 320 × 240 colour display |
-| XPT2046 Touch Controller | Resistive touchscreen input |
-| microSD card module | Stores offline map tiles |
-| microSD card | Contains the exported map images |
-| Jumper wires | Hardware connections |
-| USB cable | Programming and power |
+|Sr no.| Component | Description |
+|---|---|---|
+|1. | ESP32 DevKit V1 | Main microcontroller |
+|2. | 2.4-inch ST7789 TFT | 320 × 240 colour display |
+|3. | XPT2046 Touch Controller | Resistive touchscreen input |
+|4. | microSD-to-SD adapter | lets you fit small sd card into bigger slot |
+|5. | microSD card (8GB) | Contains the exported map images |
+|6. | Female pin headers x2 | To place components |
+|7. | Perfboard | Prototyping board |
 
 *Note: The touchscreen controller and microSD interface may be integrated into your display module or connected separately.*
 
-## 🔌 Pin Connections
+---
 
-| Signal | ESP32 GPIO |
-|---|---:|
-| SPI SCK | 18 |
-| SPI MISO | 19 |
-| SPI MOSI | 23 |
-| TFT CS | 5 |
-| TFT DC | 27 |
-| TFT RESET | 33 |
-| Touch CS | 22 |
-| Touch IRQ | 21 |
-| SD CS | 25 |
+## 📸 Hardware photos
 
-The TFT, touchscreen and SD card share the SPI bus, with separate chip-select pins.
+| Zoom level 10 | Zoom level 11 |
+|:---: | :---: |
+| ![10](docs/images/zoom_10.jpg) | ![11](docs/images/zoom_11.jgp) |
+| ![12](docs/images/zoom_12.jpg) | ![13](docs/images/zoom_13.jgp) |
+| ![14](docs/images/zoom_14.jpg) | ![15](docs/images/zoom_15.jpg) |
+
+---
 
 ## 💻 Software and Tools
 
@@ -54,6 +54,8 @@ The TFT, touchscreen and SD card share the SPI bus, with separate chip-select pi
 - **TJpg_Decoder** — JPEG tile decoding.
 - **SD and SPI libraries** — microSD storage and communication.
 
+---
+
 ## ⚙️ How It Works
 
 1. OpenStreetMap geographic data is processed and styled in QGIS.
@@ -61,6 +63,8 @@ The TFT, touchscreen and SD card share the SPI bus, with separate chip-select pi
 3. The exported tiles are copied to the microSD card.
 4. The ESP32 reads the required tiles and decodes them for display.
 5. Touch input allows the user to pan around the map and change zoom levels.
+
+---
 
 ## 🚀 Setup
 
@@ -74,6 +78,8 @@ The TFT, touchscreen and SD card share the SPI bus, with separate chip-select pi
 
 **Important:** The firmware's expected folder paths and tile naming conventions must match the structure of the map files on the microSD card.
 
+---
+
 ## 🔮 Future Improvements
 
 - 🔎 Search for places, streets and landmarks.
@@ -83,6 +89,8 @@ The TFT, touchscreen and SD card share the SPI bus, with separate chip-select pi
 - ⚡ Improve map caching and rendering for smoother panning.
 - 🧭 Add GPS-based location tracking.
 - 🔋 Optimise power consumption for portable use.
+
+---
 
 ## 🙌 Credits
 
@@ -96,3 +104,14 @@ Map data © OpenStreetMap contributors. OpenStreetMap data is available under th
 **Project Status:** Work in progress 🚧
 
 Built as an exploration of embedded systems, geographic information systems (GIS), and offline mapping using ESP32.
+
+---
+
+## 📄 License
+
+This project is licensed under the MIT License — see the [LICENSE](LICENSE) file for details.
+
+## 👤 Author
+
+**Soham Kale**
+GitHub: [@SohamKale83](https://github.com/SohamKale83)
