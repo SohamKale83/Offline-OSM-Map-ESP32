@@ -113,10 +113,10 @@ You can obtain the project files using either of the following methods.
 If Git is installed on your computer, open a terminal and run:
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/Offline-OSM-Map-ESP32.git
+git clone https://github.com/SohamKale83/Offline-OSM-Map-ESP32.git
 ```
 
-Replace `YOUR_USERNAME` with your GitHub username. Open the downloaded project folder to access the available source code and resources.
+Open the downloaded project folder to access the available source code and resources.
 
 **Option B: Download the Files Manually**
 
